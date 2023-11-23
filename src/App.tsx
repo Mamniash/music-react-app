@@ -1,10 +1,14 @@
-import MainPage from "./pages/ManiPage/MainPage"
-import style from './global.module.scss'
+import MainPage from "./pages/MainPage/MainPage";
+import style from "./global.module.scss";
+import PlayBar from "./components/PlayBar/PlayBar";
 
 const App = () => {
-  return (<div className={style.wrapper}>    <MainPage /></div>
+	return (
+		<div className={style.wrapper}>
+			<MainPage />
+			<PlayBar />
+		</div>
+	);
+};
 
-  )
-}
-
-export default App
+export default App;
